@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="form-container hidden">
+        <form id="add-book-form" action="">
+            <label>Book Title:
+                <input type="text" id="book-title">
+            </label>
+            <label>Author Name:
+                <input type="text" id="book-author">
+            </label>
+            <label>Number of Pages:
+                <input type="number" id="book-pgno">
+            </label>
+            <label>Genre:
+                <input type="text" id="book-genre">
+            </label>
+            <fieldset>
+                <legend>Have you read this book?</legend>
+                <label>
+                    <input name="book-is-read" type="radio" value="yes">
+                    Yes
+                </label>
+                <label>
+                    <input name="book-is-read" type="radio" value="no">
+                    No
+                </label>
+            </fieldset>
+            <button type="submit">Add to Library</button>
+        </form>
+    </div>
+    <div class="container">
+        <div>
+            <div>
+                <div>Title</div>
+                <div>Author</div>
+                <div>Number of Pages</div>
+                <div>Genre</div>
+                <div>Status</div>
+                <div></div>
+				<div></div>
+            </div>
+        </div>
+        <div class="book-list">
+        </div>
+        <button class="add-book">Toggle Entry Dialog</button>
+    </div>
+</body>
+
+</html>
