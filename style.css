@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: min(3.2rem, 6vw);
     text-align: center;
     padding: 40px 0;
 }
@@ -53,6 +53,7 @@ form {
     padding: 20px;
     width: fit-content;
     height: fit-content;
+    border: 1px solid (--fg);
 }
 
 input {
