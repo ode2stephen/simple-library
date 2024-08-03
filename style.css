@@ -1,82 +1,85 @@
 :root {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    /* VARS */
+    --bg: #121212;
+    --fg: #cfcfcf;
+    --alt: #454545;
+
+    background: var(--bg);
 }
 
-*, *::before, *::after {
-	box-sizing: inherit;
-	padding: 0;
-	margin: 0;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 30px;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100svh;
+    color: var(--fg);
+    font-family: monospace;
 }
 
-.form-container {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-form {
-	position: relative;
-	display: grid;
-	padding: 10px;
-	row-gap: 20px;
-	justify-content: space-around;
-	background: grey;
-	color: white;
-}
-
-.hidden {
-	visibility: hidden;
-}
-
-form > label {
-	max-width: 500px;
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-}
-
-fieldset {
-	padding: 20px;
+h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 40px 0;
 }
 
 button {
-	height: 20px;
+    all: unset;
+    font-size: 1.6rem;
+    padding: 2px 5px;
+    background: var(--alt);
 }
 
-button.add-book {
-	z-index: 1;
-	width: 200px;
-	align-self: flex-end;
+button:hover {
+    background: var(--fg);
+    color: var(--bg);
 }
 
-.container > div:first-child,
-.container .book-list {
-	margin: 20px 0px;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+form {
+    display: grid;
+    grid-template-rows: repeat();
+    row-gap: min(3vw, 30px);
+    font-size: 1.6rem;
 }
 
-.container > div:first-child {
-	border: 1px solid black;
+input {
+    padding: 0 4px;
 }
 
-.container > div:first-child > div,
-.container .book-list > div {
-	display: grid;
-	grid-template-columns: repeat(7, 1fr);
-	column-gap: 40px;
-	justify-items: center;
+fieldset {
+    padding: 20px;
+}
+
+.row {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: min(3vw, 30px);
+    justify-items: center;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.row:first-child {
+    background: var(--alt);
+    font-weight: bold;
+}
+
+.make-entry {
+    padding: 50px 0;
+}
+
+.create-form {
+    position: absolute;
+    top: 0;
 }
