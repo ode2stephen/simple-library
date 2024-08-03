@@ -62,7 +62,7 @@ function makeEntryDOM() {
     addAuthor.value = '';
     addLength.value = '';
     addGenre.value = '';
-    let statusChecks = addStatus.parentNode.parentNode.querySelectorAll('input[name=status]');
+    let statusChecks = document.querySelectorAll('.create input[name=status]');
     for (let i = 0; i < statusChecks.length; i++) {
         statusChecks[i].checked = false;
     }
@@ -82,18 +82,17 @@ function editEntryDOM(event) {
     editAuthor.value ? props.author = editAuthor.value : null;
     editLength.value ? props.length = editLength.value : null;
     editGenre.value ? props.genre = editGenre.value : null;
-    editStatus ? props.status = editStatus.value : null;
+    if (editStatus) props.status = editStatus.value;
     Book.editEntry(index, props)
     editTitle.value = '';
     editAuthor.value = '';
     editLength.value = '';
     editGenre.value = '';
     editEntryFormContainer.style.display = 'none';
-    let statusChecks = editStatus.parentNode.parentNode.querySelectorAll('input[name=status]');
-    for (let i = 0; i < statusChecks.length; i++) {
+    let statusChecks = document.querySelectorAll('.update input[name=status]')
+        for (let i = 0; i < statusChecks.length; i++) {
         statusChecks[i].checked = false;
     }
-    displayEntries();
     displayEntries();
 }
 
