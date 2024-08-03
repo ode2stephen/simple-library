@@ -21,7 +21,7 @@
             <div></div>
             <div></div>
         </div>
-        <div class="row">
+        <div class="row entry">
             <div>lord of the rings</div>
             <div>j.j. tolkien</div>
             <div>3000</div>
@@ -40,63 +40,69 @@
         <button>make entry</button>
     </div>
 
-    <form action="create-form">
-        <p>make entry</p>
-        <label>title:
-            <input type="text" name="title" id="">
-        </label>
-        <label>author:
-            <input type="text" name="author" id="">
-        </label>
-        <label>number of pages:
-            <input type="number" name="length">
-        </label>
-        <label>genre:
-            <input type="text" name="genre" id="">
-        </label>
-        <fieldset>
-            <legend>'to read' / 'reading' / 'read'?</legend>
-            <label>to read
-                <input type="radio" value="to read" name="status">
+    <div class="form-container create">
+        <form action="" class="create-form">
+            <p>make entry</p>
+            <label>title:
+                <input type="text" name="title" id="">
             </label>
-            <label>reading
-                <input type="radio" value="reading" name="status">
+            <label>author:
+                <input type="text" name="author" id="">
             </label>
-            <label>read
-                <input type="radio" value="read" name="status">
+            <label>number of pages:
+                <input type="number" name="length">
             </label>
-        </fieldset>
-        <button type="submit">add to library</button>
-    </form>
+            <label>genre:
+                <input type="text" name="genre" id="">
+            </label>
+            <fieldset>
+                <legend>'to read' / 'reading' / 'read'?</legend>
+                <label>to read
+                    <input type="radio" value="to read" name="status">
+                </label>
+                <label>reading
+                    <input type="radio" value="reading" name="status">
+                </label>
+                <label>read
+                    <input type="radio" value="read" name="status">
+                </label>
+            </fieldset>
+            <button type="submit">add to library</button>
+            <button class="cancel">cancel</button>
+        </form>
+    </div>
 
-    <form action="" class="update-form">
-        <p>edit entry</p>
-        <label>title:
-            <input type="text" name="title" id="" placeholder=''>
-        </label>
-        <label>author:
-            <input type="text" name="author" id="">
-        </label>
-        <label>number of pages:
-            <input type="number" name="length">
-        </label>
-        <label>genre:
-            <input type="text" name="genre" id="">
-        </label>
-        <fieldset>
-            <legend>'to read' / 'reading' / 'read'?</legend>
-            <label>to read
-                <input type="radio" value="to read" name="status">
+    <div class="form-container update">
+        <form action="" class="update-form">
+            <p>edit entry</p>
+            <label>title:
+                <input type="text" name="title" id="" placeholder=''>
             </label>
-            <label>reading
-                <input type="radio" value="reading" name="status">
+            <label>author:
+                <input type="text" name="author" id="">
             </label>
-            <label>read
-                <input type="radio" value="read" name="status">
+            <label>number of pages:
+                <input type="number" name="length">
             </label>
-        </fieldset>
-        <button type="submit">save changes</button>
-    </form>
+            <label>genre:
+                <input type="text" name="genre" id="">
+            </label>
+            <fieldset>
+                <legend>'to read' / 'reading' / 'read'?</legend>
+                <label>to read
+                    <input type="radio" value="to read" name="status">
+                </label>
+                <label>reading
+                    <input type="radio" value="reading" name="status">
+                </label>
+                <label>read
+                    <input type="radio" value="read" name="status">
+                </label>
+            </fieldset>
+            <button type="submit" class="submit">save changes</button>
+            <button class="cancel">cancel</button>
+        </form>
+    </div>
 </body>
 
 </html>
