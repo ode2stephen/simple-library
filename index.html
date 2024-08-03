@@ -18,8 +18,6 @@
             <div>book length</div>
             <div>genre</div>
             <div>status</div>
-            <div></div>
-            <div></div>
         </div>
         <div class="row entry">
             <div>lord of the rings</div>
@@ -28,10 +26,10 @@
             <div>fiction</div>
             <div>reading</div>
             <div>
-                <button>edit entry</button>
+                <button>edit</button>
             </div>
             <div>
-                <button>delete entry</button>
+                <button>delete</button>
             </div>
         </div>
     </main>
@@ -44,16 +42,16 @@
         <form action="" class="create-form">
             <p>make entry</p>
             <label>title:
-                <input type="text" name="title" id="">
+                <input type="text" class="title">
             </label>
             <label>author:
-                <input type="text" name="author" id="">
+                <input type="text" class="author">
             </label>
             <label>number of pages:
-                <input type="number" name="length">
+                <input type="number" class="length">
             </label>
             <label>genre:
-                <input type="text" name="genre" id="">
+                <input type="text" class="genre">
             </label>
             <fieldset>
                 <legend>'to read' / 'reading' / 'read'?</legend>
@@ -67,7 +65,7 @@
                     <input type="radio" value="read" name="status">
                 </label>
             </fieldset>
-            <button type="submit">add to library</button>
+            <button type="button" class="submit">add to library</button>
             <button class="cancel">cancel</button>
         </form>
     </div>
@@ -76,16 +74,16 @@
         <form action="" class="update-form">
             <p>edit entry</p>
             <label>title:
-                <input type="text" name="title" id="" placeholder=''>
+                <input type="text" class="title" placeholder=''>
             </label>
             <label>author:
-                <input type="text" name="author" id="">
+                <input type="text" class="author">
             </label>
             <label>number of pages:
-                <input type="number" name="length">
+                <input type="number" class="length">
             </label>
             <label>genre:
-                <input type="text" name="genre" id="">
+                <input type="text" class="genre">
             </label>
             <fieldset>
                 <legend>'to read' / 'reading' / 'read'?</legend>
@@ -99,7 +97,7 @@
                     <input type="radio" value="read" name="status">
                 </label>
             </fieldset>
-            <button type="submit" class="submit">save changes</button>
+            <button type="button" class="submit">save changes</button>
             <button class="cancel">cancel</button>
         </form>
     </div>
