@@ -38,6 +38,7 @@ button {
     all: unset;
     padding: 2px 5px;
     background: var(--alt);
+    height: 20px;
 }
 
 button:hover {
