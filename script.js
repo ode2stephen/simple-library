@@ -88,7 +88,6 @@ function editEntryDOM(event) {
     editAuthor.value = '';
     editLength.value = '';
     editGenre.value = '';
-    editStatus.ariaChecked = false;
     editEntryFormContainer.style.display = 'none';
     let statusChecks = editStatus.parentNode.parentNode.querySelectorAll('input[name=status]');
     for (let i = 0; i < statusChecks.length; i++) {
